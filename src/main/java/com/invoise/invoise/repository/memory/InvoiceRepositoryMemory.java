@@ -2,6 +2,7 @@ package com.invoise.invoise.repository.memory;
 
 import com.invoise.invoise.entity.Invoice;
 import com.invoise.invoise.repository.InvoiceRepositoryInterface;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
@@ -25,9 +26,10 @@ public class InvoiceRepositoryMemory implements InvoiceRepositoryInterface {
     }
 
     @Override
-    public Iterable<Invoice> findAllById(Iterable<String> strings) {
-        throw new UnsupportedOperationException();
+    public Iterable<Invoice> findAllById(Iterable<String> iterable) {
+        return null;
     }
+
 
     @Override
     public long count() {
